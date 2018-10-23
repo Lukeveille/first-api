@@ -1,0 +1,4 @@
+<% @response["result"].each do |result| %>
+  <%= image_tag(result["image_thumb_url"]) if result["image_thumb_url"] %>
+<p><%= result["name"] %></p>
+<% end %>
